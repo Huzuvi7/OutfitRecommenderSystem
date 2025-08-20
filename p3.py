@@ -1,7 +1,7 @@
 import streamlit as st
 from groq import Groq
 
-client = Groq(api_key="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")
+client = Groq(api_key="ENTER_YOUR_API_KEY_HERE")
 
 # Streamlit UI
 st.title("AI Outfit Recommendation")
@@ -23,3 +23,4 @@ if st.button("Get Recommendation") and user_prompt:
     st.write("AI Recommendation:")
     for chunk in completion:
         st.write(chunk.choices[0].delta.content or "")
+
