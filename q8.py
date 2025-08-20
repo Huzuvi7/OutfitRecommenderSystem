@@ -3,7 +3,7 @@ import os
 from groq import Groq
 
 # Set the Groq API key (replace 'your_api_key_here' with your actual API key)
-os.environ['GROQ_API_KEY'] = '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'
+os.environ['GROQ_API_KEY'] = 'ENTER_YOUR_API_KEY_HERE'
 
 # Load the CSV file
 csv_path = r"D:\Engineer ABDUL QAVI\OutFitRecommender\zara.csv"
@@ -78,3 +78,4 @@ else:
         print(f"An error occurred while communicating with the Groq API: {str(e)}")
         print("\nHere are the first two matching items from your inventory:")
         print(matching_clothes[['name', 'Product Category', 'description', 'brand', 'price', 'currency']].head(2).to_string(index=False))
+
